@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<!--CONVIENE NO DEFINIR ALTURA DE LOS DIVS EN CSS SINO DEJAR QUE SE AJUSTEN ACORDE A SU CONTENIDO-->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--se coloca ../ para salir y encontrar la carpeta correspondiente -->
+
+    <!-- PRIMERO LO DIVIDIMOS EN SECCIONES HEADER - SECTION- FOOTER Y CREAR EL ESQUELETO -->
+
+    <title>Viano</title>
+</head>
+
+<body>
+    <nav class="menuNav">
+        <div class="logos">
+            <!--DIV de "division" -división . Sirve para crear secciones o agrupar contenidos. Puede contener: Texto, y/o cero o más elementos en bloque o en linea.
+                Atributos-->
+            <!-- CLASS	Asigna nombres de clases al elemento. Por defecto, clases CSS.-->
+            <a href="./home.html"><img src="../img/homelogoviano.png" alt="VIANO, MEDIDAS DE CAPACIDAD"></a>
+        </div>
+
+        <ul class="botonesNav">
+            <!--Crea un menú de navegación. <nav> <ul> <li> <a </a> </li> </ul> </nav>-->
+            <!--PARA CREAR VARIOS ELEMENTOS A LA VEZ * Y LA CANTIDAD A REPETIR
+                PARA BAJAR TODAS LAS ETIQUETAS AL MISMO TIEMPO ALT TE POSICIONAS Y ESCRIBIR EN SIMULTÁNEO ALT Y LUEGO ENTER-->
+            <li><a id="inicio" href="./home.html">Inicio</a></li>
+            <li><a id="nuestra-historia" href="./nuestraHistoria.html">Nuestra Historia</a></li>
+            <li><a id="productos-servicios" href="./productos.html">Productos y Servicios</a></li>
+            <li><a id="certificaciones" href="">Certificaciones</a>
+                <ul class="subMenu">
+                    <li><a id="rump" href="./certifRump.html">Inscripción RUMP Ministerio de Producción</a></li>
+                    <li><a id="inti" href="./certiINTI.html">Reparador Auditado por Meteología Legal</a></li>
+                </ul>
+            </li>
+            <li><a id="contacto" href="./contacto.html">Contacto</a></li>
+            <li><select name="lang" id="selector-idiomas" class="select-css">
+                    <option id="español" value="esp">Español</option>
+                    <option id="ingles" value="eng">Ingles</option>
+                </select>
+            </li>
+        </ul>
+
+        <div class="logo2">
+            <!--el div abarca por default el ancho de la página-->
+            <img src="../img/isologoblanco.png" alt="Logo ISO">
+        </div>
+    </nav>
+
+    <!--SHIFT TAB PARA TABULAR PARA ATRÁS Y TAB PARA TABULAR -->
+    <section class="section-general-certificaciones">
+        <div class="contenedor-certificaciones">
+            <div class="textoSection-certificaciones">
+                <h4 id="certificaciones-titulo">Certificaciones</h4>
+            </div>
+
+            <div class="textoSection-certificaciones">
+                <div class="contenedor-fila">
+                    <h2 id="inscripcion">Inscripcion RUMP</h2>
+                    <p id="ministerio">Ministerio de Produccion</p>
+                </div>
+                <div class="contenedor-img">
+                    <img class="img-certificaciones" src="../img/ministerio.png" alt="">
+                </div>
+            </div>
+            <div class="textoSection-certificaciones">
+                <div class="contenedor-fila">
+                    <h2 id="reparador">Reparador Auditado</h2>
+                    <p id="meteologia">por Meteologia legal INTI</p>
+                </div>
+                <div id="img-inti" class="contenedor-img">
+                    <img id="img-inti" class="img-certificaciones" src="../img/inti.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="textoFooter">
+            <h3 id="footer-contacto">
+                Contacto
+            </h3>
+            <p>
+                Tel: + 54 9 11 3566 4142
+            </p>
+        </div>
+
+        <div class="textoFooter">
+            <p>
+                Zapiola 1144, San Justo
+            </p>
+            <p id="footer-partido">
+                Partido de la Matanza
+            </p>
+        </div>
+
+        <div class="textoFooter">
+            <p id="footer-cp">
+                CP 1754- Provincia de Buenos Aires
+            </p>
+        </div>
+
+    </footer>
+    <script src="../scripts/script-idioma-nav-footer.js"></script>
+    <script src="../scripts/script-idioma-body-certificaciones.js"></script>
+
+</body>
+
+</html>

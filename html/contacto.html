@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<!--CONVIENE NO DEFINIR ALTURA DE LOS DIVS EN CSS SINO DEJAR QUE SE AJUSTEN ACORDE A SU CONTENIDO-->
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../css/style.css">
+  <!--se coloca ../ para salir y encontrar la carpeta correspondiente -->
+
+  <!-- PRIMERO LO DIVIDIMOS EN SECCIONES HEADER - SECTION- FOOTER Y CREAR EL ESQUELETO -->
+
+  <title>Viano</title>
+</head>
+
+<body>
+  <nav class="menuNav">
+    <div class="logos">
+      <!--DIV de "division" -división . Sirve para crear secciones o agrupar contenidos. Puede contener: Texto, y/o cero o más elementos en bloque o en linea.
+                Atributos-->
+      <!-- CLASS	Asigna nombres de clases al elemento. Por defecto, clases CSS.-->
+      <a href="./home.html"><img src="../img/homelogoviano.png" alt="VIANO, MEDIDAS DE CAPACIDAD"></a>
+
+    </div>
+
+    <ul class="botonesNav">
+      <!--Crea un menú de navegación. <nav> <ul> <li> <a </a> </li> </ul> </nav>-->
+      <!--PARA CREAR VARIOS ELEMENTOS A LA VEZ * Y LA CANTIDAD A REPETIR
+                PARA BAJAR TODAS LAS ETIQUETAS AL MISMO TIEMPO ALT TE POSICIONAS Y ESCRIBIR EN SIMULTÁNEO ALT Y LUEGO ENTER-->
+      <li><a id="inicio" href="./home.html">Inicio</a></li>
+      <li><a id="nuestra-historia" href="./nuestraHistoria.html">Nuestra Historia</a></li>
+      <li><a id="productos-servicios" href="./productos.html">Productos y Servicios</a></li>
+      <li><a id="certificaciones" href="./certificaciones.html">Certificaciones</a>
+        <ul class="subMenu">
+          <li><a id="rump" href="./certifRump.html">Inscripción RUMP Ministerio de Producción</a></li>
+          <li><a id="inti" href="./certiINTI.html">Reparador Auditado por Meteología Legal</a></li>
+        </ul>
+      </li>
+      <li><a id="contacto" href="./contacto.html">Contacto</a></li>
+      <li><select name="lang" id="selector-idiomas" class="select-css">
+          <option id="español" value="esp">Español</option>
+          <option id="ingles" value="eng">Ingles</option>
+        </select>
+      </li>
+    </ul>
+
+    <div class="logo2">
+      <!--el div abarca por default el ancho de la página-->
+      <img src="../img/isologoblanco.png" alt="Logo ISO">
+    </div>
+  </nav>
+
+  <!--SHIFT TAB PARA TABULAR PARA ATRÁS Y TAB PARA TABULAR -->
+  <section class="section-general">
+
+    <div class="textoSection-contacto">
+      <h2>VIANO</h2>
+    </div>
+    <div class="textoSection2-contacto">
+      <p id="direccion">Dirección: Zapiola 1144</p>
+      <p id="partido">San Justo - Partido de la Matanza</p>
+      <p id="provincia">CP 1754- Provincia de Buenos Aires</p>
+      <div class="textoAtencionAlCliente">
+        <h4 id="atencion">Atención al Cliente</h4>
+        Tel: + 54 9 11 3566 4142
+      </div>
+    </div>
+
+    <!-- EN ACTION SE DEBE PONER EL LINK DADO POR FORMSPREE -->
+    <form class="formulario" action="https://formspree.io/xdooyajv" method="POST">
+      <div class="contenedor-label">
+        <label id="nombre" for="Nombre">Nombre:</label>
+        <input class="input-datos" name="Nombre" type="text">
+      </div>
+      <div class="contenedor-label">
+        <label id="email" for="Email">Tu email:</label>
+        <input class="input-datos" type="text" name="Email">
+      </div>
+      <div class="contenedor-label">
+        <label id="mensaje" for="Mensaje">Tu Mensaje:</label>
+        <textarea class="input-textarea" name="Mensaje"></textarea>
+      </div>
+      <input id="enviar" class="boton-enviar" type="submit" value="Enviar">
+      <br />
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.8035778659037!2d-58.576668484768824!3d-34.659663180445044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7c71b6432eb%3A0xcf27f7e789e81586!2sZapiola%201144%2C%20B1753BAX%20Villa%20Luzuriaga%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1574543746686!5m2!1ses!2sar" width="450" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <br />
+    </form>
+    <br />
+
+  </section>
+
+  <footer class="footer">
+
+    <div class="textoFooter">
+      <h3 id="footer-contacto">
+        Contacto
+      </h3>
+      <p>
+        Tel: + 54 9 11 3566 4142
+      </p>
+    </div>
+
+    <div class="textoFooter">
+      <p>
+        Zapiola 1144, San Justo
+      </p>
+      <p id="footer-partido">
+        Partido de la Matanza
+      </p>
+    </div>
+
+    <div class="textoFooter">
+      <p id="footer-cp">
+        CP 1754- Provincia de Buenos Aires
+      </p>
+    </div>
+
+  </footer>
+
+  <script src="../scripts/script-idioma-nav-footer.js"></script>
+  <script src="../scripts/script-idioma-body-contacto.js"></script>
+</body>
+
+</html>
